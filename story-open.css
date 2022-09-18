@@ -1,0 +1,37 @@
+.story-open {
+    
+    position: absolute;
+    opacity: .9;
+    top: 35%;
+    left: 10%;
+    width: 50%;
+    background: #0000009e;
+    height: 90%;
+    z-index: 1;
+    transform: rotate(.8deg
+    );
+} 
+.story-close {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    font-size: 3em;
+    border: none;
+    background-color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+}
+.story-nadpis {
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 1px 15px;
+    color: rgb(255, 255, 255);
+}
+.story-p {
+    line-height: 1.3em;
+    letter-spacing: .1px;
+    color: rgb(255, 255, 255);
+    padding: 1px 15px;
+    font-size: 1.75rem;
+}

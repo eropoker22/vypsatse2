@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(6, 6, 6, 0.753), #03492216), url(./img/neon-anonymous.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+     background-position: center;
+     width: 100%;
+    height: 120vh;
+}
+.stred {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+.logo-popisek {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 105px;
+  color: white;
+  left: 160px;
+  padding: 1px 5px;
+  border: 1px solid black;
+  width: 450px;
+  background-color: #f6faf82e;
+}
+span {
+  color: #03E76A;}
+.hide {
+  display: none;
+}
+/* main nadpis*/
+.container {
+  margin-top: 9.1em;
+  margin-left: 2.65em;
+  width: 650px;
+  background-color: #03e76a22;
+  border-radius: 5px;
+}
+
+.container h4 {
+  font-size: 1.3rem;
+  padding-top: 8px;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #03E76A; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+/*odkazy*/
+.hlavni-stranka {
+  background:transparent;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translate(0);
+  font-size: 1.6rem;
+  position: absolute;
+  top: 148px;
+  left: 485px;
+  text-decoration: none;
+  color: white;
+  padding: 1px 4px;
+  border: none;
+}
+.hlavni-stranka::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1px;
+  background: #03E76A;
+  width: 2px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+.hlavni-stranka:hover::before {
+  left: calc(100% + 32px);
+    transition: 0.75s;
+}
+.hlavni-popis {
+  border-left: #03e76a5b 1px solid;
+  border-top: #03e76a75 1px solid;
+  max-width: 670px;
+  padding-left: 10px;
+  position: absolute;
+  top: 182px;
+  left: 45px;
+  background-color: #03974619;
+  font-size: 2rem;
+  color: white;
+}
+.hlavni-text {
+  padding-top: 0;
+  font-size: 1.3rem;
+}
+.popisek-kontakt {
+  position: absolute;
+  top: 445px;
+  font-size: 1.4rem;
+  left: 290px;
+  font-weight: 600;
+  max-width: 440px;
+  color: #fff;
+}
+.footer {
+  max-width: 700px;
+  color: white;
+  margin-left: 190px;
+  margin-top: 620px;
+  text-align: center;
+}
+.btn-knihovna {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #03E76A;
+  font-weight: 100;
+  position: absolute;
+  font-size: 2.85rem;
+  top: 275px;
+  left: 45px;
+  border: none ;
+  background-color: #010d067c;
+  padding: 35px 22px;
+
+}
+.btn-knihovna:hover {
+  color: #fff;
+  /* padding: 15px; */
+  transition: 350ms;
+  }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #03E76A }
+}
+@media (max-width: 990px) {
+  .footer {
+    margin-left: 55px;
+    transition: 800ms;
+  }
+  .stred {
+    left: 15px;
+    transition: 800ms;
+  }
+}
+@media (max-width: 790px) {
+  .stred {
+    left: -20px;
+  }
+  .footer {
+    margin-left: 20px;
+  }
+  
+}
+@media (max-width: 680px) {
+  .footer {
+    margin-top: 1000px;
+  }
+  .logo-popisek {
+    top: 128px;
+    left: 67px;
+    max-width: 376px;
+  }
+  .big-nav {
+    margin-top: 165px;
+    margin-left: -5px;
+  }
+  span {
+    display: none;
+  }
+  .hlavni-stranka {
+    top: 210px;
+    left: 50px;
+  }
+  .hlavni-popis {
+    top: 240px;
+    max-width: 400px;
+  }
+  .btn-knihovna {
+    transition: 1000ms;
+    top: 780px;
+    min-width: 400px;
+  }
+  .container {
+    max-width: 450px;
+  }
+  .popisek-kontakt {
+    font-size: 1rem;
+    left: 220px;
+    top: 370px;
+    max-width: 250px;
+  }
+  
+}
+/* @media (max-width: 430px) {
+  
+  .logo-popisek {
+    top: 60px;
+    
+  }
+  .hlavni-stranka {
+    left: 40px;
+    top: 99px;
+    border-bottom: #03e76a5a 2px solid;
+  }
+  span {
+    display: none;
+  }
+ 
+}
+@media (max-width: 375px) {
+  .logo-popisek {
+    
+    left: 20px;
+    top: 70px;
+  }
+  
+  .hlavni-stranka {
+    top: 110px
+  }
+  .container h4 {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    
+  }
+}
+@media (max-width: 255px) {
+.hide {
+  display: inline;
+}
+.container h4 {
+  font-size: .725rem;
+}
+} */

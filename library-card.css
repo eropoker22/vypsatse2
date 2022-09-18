@@ -1,0 +1,62 @@
+.arrow {
+    position: absolute;
+    top: 110px;
+    left: 630px;
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+}
+.arrow:hover {
+    color: #03E76A;
+}
+.flex-column {
+    display: flex;
+
+}
+.nadpis-karty {
+    /* position: relative; */
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding-left: 10px;
+    margin-top: -9px;
+}
+.podnadpis-karty {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.card-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 45px;
+    min-width: 30%;
+}
+.story-button {
+    min-width: 50px;
+    text-decoration: none;
+    color: rgb(68, 255, 134);
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(248, 248, 248, 0.283);
+    border: 1px solid rgb(0, 0, 0);
+    /* max-width: 150px; */
+    min-width: 500px;
+    max-width: 100%;
+    min-height: 10px;
+    max-height: 50px;
+}
+.pocet-zobrazeni {
+    padding-top: 8px;
+}
+.card:hover {
+    background-color: #03e76a69;
+    box-shadow: 1px 1px 50px 0 rgba(15, 199, 79, 0.37);
+    margin-top: -1%;
+    font-weight: 600;
+    
+}
+
+
+

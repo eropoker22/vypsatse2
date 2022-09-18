@@ -1,0 +1,25 @@
+.logo {
+    position: absolute;
+    animation: neonAnim .6s alternate-reverse infinite;
+    color: #03E76A;
+    
+    font-size: 6rem;
+    left: 40px;
+    top: 22px;
+    rotate: -6deg;
+    z-index: 10;
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 24px #03E76A,
+          0 0 54px #03E76A,
+          0 0 114px #03E76A;
+      }
+      to {
+        text-shadow:
+          0 0 19px #03E76A,
+          0 0 34px #03E76A,
+          0 0 74px #03E76A;
+      }
+}

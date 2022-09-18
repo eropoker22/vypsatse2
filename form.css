@@ -1,0 +1,141 @@
+
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+label  { position: absolute;
+    max-width: 130px;
+    min-height: 30px;
+    top: 387px;
+    left: 540px;
+    padding: .2em .8em;
+    border: 1px solid #03E76A ;
+    border-radius: 5px;
+    outline: none;
+    opacity: .9;
+}
+.inputfile + label {
+    min-height: 50px;
+    min-width: 150px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    cursor: pointer;
+    background-color: #03e76a10;
+    
+}
+form p {
+    font-size: 1.6rem;
+    position: absolute;
+    color: #03E76A;
+}
+.popisek-nick {
+    background-color: rgba(0, 0, 0, 0.347);
+    left: 285px;
+    top: 235px;
+    font-size: 1.5rem;
+}
+.popisek-text {
+    background-color: rgba(0, 0, 0, 0.18);
+    top: 265px;
+    left: 450px;
+}
+.send {
+    font-size: 1.2rem;
+    left: 560px;
+    top: 262px;
+}
+.form-nick {
+    font-weight: 600;
+    position: absolute;
+    top: 289px;
+    font-size: 1rem;
+    left: 285px;
+    max-width: 150px;
+    min-height: 25px;
+    border: none;
+    opacity: .6;
+    outline: none;
+    padding-left: 5px;
+}
+.form-nick:focus {
+    background-color: #d90d0d;
+}
+textarea {
+    font-weight: 600;
+    font-size: 1rem;
+    position: absolute;
+    border: none;
+    opacity: .6;
+    line-height: 15px;
+    letter-spacing: 1px;
+    word-break: break-all;
+    white-space: initial;
+    left: 285px;
+    top: 322px;
+    height: 120px;
+    width: 245px;
+    outline: none;
+    padding: 3px 6px;
+}
+textarea:focus {
+    height: 400px;
+    opacity: .8;
+    background-color: #ffffff;
+}
+.submit {
+    color: #03E76A;
+    font-size: 2.5rem;
+    border: none;
+    background-color: #000201b3;
+    position: absolute;
+    left: 560px;
+    top: 305px;
+    min-width: 150px;
+    padding: 15px;
+}
+.submit:hover {
+    cursor: pointer;
+    color: #ffffff;
+    transition: 350ms;
+    box-shadow: 0 1px 8px 0 rgba(15, 199, 79, 0.982);
+}
+@media (max-width: 680px) {
+form {
+    position: absolute;
+    top: 240px;
+    left: -240px;
+  }
+  label{
+    padding-top: 15px;
+    
+    border-radius: none;
+    left: 285px;
+    top: 460px;
+  }
+  textarea {
+    min-width: 350px;
+    max-width: 380px;
+  }
+  .send {
+    display: none;
+  }
+  .submit {
+    top: 457px;
+    left: 480px;
+    width: 198px;
+  }
+}

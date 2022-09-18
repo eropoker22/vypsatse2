@@ -1,0 +1,178 @@
+
+  .wrapper{
+    padding-top: .4em;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 10rem;
+  }
+  .col{ 
+    position: absolute;
+    width: 200px;
+    height: 240px;
+    top: 310px;
+    left: 0;
+
+    /* cursor: pointer; */
+  }
+
+  .container{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
+  }
+  
+  
+  .front,
+  .back{
+    background-size: cover;
+    box-shadow: 0 1px 8px 0 rgba(15, 199, 79, 0.982);
+      background-position: center;
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      text-align: center;
+      min-width: 225px;
+      min-height: 100px;
+      max-width: 160px;
+      height: auto;
+      color: #fff;
+      font-size: .8rem;
+  }
+
+  /* .back{
+    background: #03E76A;
+    background: -webkit-linear-gradient(45deg,  #03E76A 0%,#ffffff 100%);
+    background: -o-linear-gradient(45deg,  #03E76A 0%,#000000 100%);
+    background: linear-gradient(45deg,  #03E76A 0%,#000000 100%); */
+  /* } */
+  
+  .front:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 50%;
+      height: 100%;
+      content: '';
+      display: block;
+      opacity: .6;
+      background-color: rgba(7, 4, 4, 0.477);
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      
+  }
+  .container:hover .front,
+  .container:hover .back{
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .back{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  
+  .inner{
+      -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+              transform: translateY(-50%) translateZ(60px) scale(0.94);
+      top: 75%;
+      font-size: 1.8rem;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 1 px 2px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      outline: 1px solid transparent;
+      -webkit-perspective: inherit;
+              perspective: inherit;
+      z-index: 2;
+  }
+  .inner p {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 3rem;
+    
+  }
+  .storky-p {
+        font-size: 1.3rem;
+  }
+  .zadni-strana {
+    padding-top: 5px;
+    font-size: .6rem;
+  }
+
+  .container .back{
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+  
+  .container .front{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+  
+  .container:hover .back{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .front .inner p{
+    
+    
+    position: relative;
+  }
+  
+  
+  .front .inner p:after{
+    content: '';
+    width: 2rem;
+    height: 12px;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+  }
+  
+  .front .inner span{
+    /* color: rgba(4, 254, 83, 0.7); */
+    font-weight: 300;
+  }
+  @media (max-width: 680px) {
+        .front,
+  .back {
+        min-width: 50px;
+  }
+  .col {
+        top: 220px;
+  }
+  .inner {
+        top: 100%;
+  }
+
+  }
